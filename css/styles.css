@@ -231,6 +231,17 @@ body {
   font-weight: 900;
   font-size: 30px;
 }
+.news__title {
+  color: #005E92;
+  margin-bottom: 10px;
+}
+.news__title a {
+  color: #005E92;
+  text-decoration: none;
+}
+.news__title a:hover {
+  text-decoration: underline;
+}
 .news__heading {
   padding-bottom: 5px;
 }

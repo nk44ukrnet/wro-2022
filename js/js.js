@@ -23,10 +23,11 @@
     }
 
     //fetch news from robotica
-    function newsItemTemplate({img, content}) {
+    function newsItemTemplate({img, content, title, url}) {
         return `
         <div class="swiper-slide">
                             <div class="news__text">
+                            <h3 class="news__title"><a href="${url}" target="_blank">${title}</a></h3>
                                 ${content}
                             </div>
                             <div class="news__image">
@@ -43,8 +44,10 @@
             if (latestNews) {
                 data.forEach(item => {
                     let img = item.fimg_url || 'https://robotica.in.ua/wp-content/uploads/2019/05/robotica_new.jpg',
-                        text = item.excerpt.rendered;
-                    latestNews.innerHTML += newsItemTemplate({img, content: text});
+                        text = item.excerpt.rendered,
+                        url = item.guid.rendered,
+                        title = item.title.rendered;
+                    latestNews.innerHTML += newsItemTemplate({img, content: text, url, title});
                 })
             }
             console.log(data)
