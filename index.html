@@ -5,67 +5,137 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link
+            rel="stylesheet"
+            href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <link rel="stylesheet" href="css/styles.css?ver1">
     <script src="js/js.js" defer></script>
     <title>WRO Ukraine</title>
 </head>
 <body>
 <div class="wrapper">
-    <header class="header">
-        <img src="img/logo.png" alt="WRO Ukraine" class="header__logo">
-    </header>
-    <main class="main">
-        <div class="hero">
-            <div class="hero__container">
-                <h1 class="hero__heading heading">Опис WRO</h1>
-                <p class="hero__text">текст</p>
-            </div>
-        </div>
-        <div class="categories">
-            <div class="categories__container">
-                <div class="categories__item">РобоМісія</div>
-                <div class="categories__item">РобоСпорт</div>
-                <div class="categories__item">Майбутні <br> Інноватори</div>
-            </div>
-        </div>
-        <div class="details">
-            <div class="details__container">
-                <h2 class="details__heading heading">Детальніше про WRO в Україні</h2>
-                <a href="//robotica.in.ua" target="_blank" class="heading">Robotica.in.ua</a>
-            </div>
-        </div>
 
-        <div class="news">
-            <div class="news__container">
-                <h2 class="news__heading heading">Новини</h2>
-                <div class="news__holder">
-                    <div class="news__item">
-                        <h3 class="news__title"><a href="#!" target="_blank">Новина 3 (заголовок)</a></h3>
-                        <div class="news__content">
-                            <a href="#!" target="_blank" class="news__image">
-                                <img src="https://robotica.in.ua/wp-content/uploads/2019/05/robotica_new.jpg" alt="robotica" loading="lazy">
-                            </a>
-                            <div class="news__text">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad alias aliquam animi
-                                blanditiis
-                                commodi consequuntur culpa debitis delectus dolores ea eos expedita, fugiat fugit illo
-                                incidunt laboriosam libero magni natus neque numquam pariatur quas quia ratione
-                                recusandae
-                                repellat reprehenderit sed suscipit tempora temporibus voluptatibus. Alias delectus
-                                exercitationem quae sequi voluptatem?
-                            </div>
+    <header class="header">
+        <div class="header__container">
+            <div class="header__logo">
+                <img src="img/logo.png" alt="logo" loading="lazy">
+            </div>
+        </div>
+    </header>
+
+    <div class="hero">
+        <div class="hero__bg"></div>
+        <div class="hero__container">
+            <div class="swiper mySwiper1">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="img/hero-slide1.png" alt="Hero slide" loading="lazy">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/hero-slide2.jpg" alt="Hero slide" loading="lazy">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/hero-slide3.jpg" alt="Hero slide" loading="lazy">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/hero-slide4.jpg" alt="Hero slide" loading="lazy">
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="description">
+                    <h1 class="description__heading">Опис WRO</h1>
+                    <p class="description__text">Всесвітня Олімпіада з Робототехніки (World Robot Olympiad (WRO)) — одна
+                        з найбільших олімпіад світу. Це ключова подія в області новітніх навчальних технологій та
+                        освітніх програм, де найкращі учасники святкують досягнення розуму.
+                        Світова Олімпіада з Робототехніки будує цю навчальну платформу вже 18 років поспіль. Перші
+                        робототехнічні змагання відбулися в 2004 році, де були представлені 12 країн і 4000 команд. В
+                        2022 році цифра зросла більше ніж до 90 країн і вже близько 28 000 команд та 75 000 учасників зі
+                        всього світу беруть участь в місцевих, регіональних і національних змаганнях.
+                        Робототехніка – прекрасна платформа для здобуття навичок, необхідних в XXI столітті. Вирішення
+                        робототехнічних задач дає початок інноваціям, креативності і навичкам вирішення проблем. Це
+                        згодом знайде своє відображення в прикладних галузях – науці, інженерії та комп’ютерному
+                        програмуванні. Під час виконання завдань молодь працює в команді, вони разом навчаються в
+                        захоплюючій формі, тому процес пізнання відбувається настільки природньо, як саме дихання.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="categories">
+        <div class="categories__container">
+            <div class="categories__holder">
+                <h2 class="categories__heading heading heading_gap">Категорії WRO</h2>
+                <div class="categories__items">
+                    <div class="categories__item categories__item_1">
+                        <div class="categories__inner">
+                            <h3 class="categories__title">Робо</h3>
+                            <div class="categories__text">Місія</div>
+                        </div>
+                    </div>
+                    <div class="categories__item categories__item_2">
+                        <div class="categories__inner">
+                            <h3 class="categories__title">Робо</h3>
+                            <div class="categories__text">Спорт</div>
+                        </div>
+                    </div>
+                    <div class="categories__item categories__item_3">
+                        <div class="categories__inner">
+                            <h3 class="categories__title">Майбутні</h3>
+                            <div class="categories__text">Інноватори</div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </main>
+    </div>
+
+    <div class="news">
+        <div class="news__container">
+            <h2 class="news__heading heading heading_gap">Новини</h2>
+        </div>
+        <div class="news__body">
+            <div class="__container">
+                <div class="swiper mySwiper2">
+                    <div class="swiper-wrapper" id="latestNews">
+<!--                        <div class="swiper-slide">-->
+<!--                            <div class="news__text">-->
+<!--                                Our National Organizers are a diverse lot. They are independent non-profit-->
+<!--                                organizations, universities, national educational authorities, and commercial-->
+<!--                                organizations with an interest in robotics. It is also thanks to our National-->
+<!--                                Organizers, that WRO is a truly global competition. They all share our goal of giving as-->
+<!--                                many young people as possible a chance to explore STEM topics and robotics. And to have-->
+<!--                                fun with robotics!-->
+<!--                            </div>-->
+<!--                            <div class="news__image">-->
+<!--                                <img src="img/news-image.png" alt="Image" loading="lazy">-->
+<!--                            </div>-->
+<!--                        </div>-->
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="about">
+        <div class="about__container">
+            <h2 class="about__item about__heading heading heading_gap">
+                Детальніше <br>
+                про WRO <br>
+                в Україні
+            </h2>
+            <div class="about__item">
+                <a href="//robotica.in.ua" target="_blank" class="about__link"><span>ROBOTICA.IN.UA</span></a>
+            </div>
+        </div>
+    </div>
 
 </div>
+
 
 </body>
 </html>
