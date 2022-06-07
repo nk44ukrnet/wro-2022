@@ -463,4 +463,18 @@ body {
     z-index: 5;
   }
 }
+.footer__container {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.footer p:not(:last-child) {
+  margin-bottom: 10px;
+}
+.footer a {
+  color: #fff;
+  text-decoration: none;
+}
+.footer a:hover {
+  text-decoration: underline;
+}
 /*# sourceMappingURL=styles.css.map */
