@@ -74,8 +74,7 @@ body {
   top: 0;
   left: 0;
   z-index: 10;
-  background: url(../img/wrapper-overlay.png) center center no-repeat;
-  background-size: 150%;
+  background: url(../img/wrapper-overlay.png) top -340px center no-repeat;
   pointer-events: none;
 }
 @media (max-width: 1200px) {
