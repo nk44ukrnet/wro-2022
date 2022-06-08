@@ -136,19 +136,25 @@ body {
   object-fit: cover;
 }
 @media (max-width: 1200px) {
+  .hero .swiper .swiper-slide img {
+    height: auto;
+  }
   .hero .swiper .swiper-pagination {
     bottom: auto;
-    top: 567px;
+    top: 10px;
   }
 }
 .hero .swiper .description {
   position: absolute;
-  bottom: 40px;
+  bottom: 0;
   right: 0;
   width: 100%;
   max-width: 584px;
   z-index: 2;
   text-align: right;
+}
+.hero .swiper .description a {
+  color: #D6245E;
 }
 .hero .swiper .description__heading {
   display: inline-block;
@@ -163,8 +169,10 @@ body {
 .hero .swiper .description__text {
   text-align: left;
   background-color: #fff;
-  padding: 20px 42px 20px 22px;
+  padding: 20px;
   color: #005E92;
+  font-size: 13px;
+  line-height: 1.5;
 }
 @media (max-width: 1200px) {
   .hero .swiper .description {

@@ -148,21 +148,30 @@ body {
     }
 
     @media (max-width: @mobile) {
+      .swiper-slide {
+        img {
+          height: auto;
+        }
+      }
       .swiper-pagination {
         bottom: auto;
-        top: 567px;
+        top: 10px;
       }
     }
 
 
     .description {
       position: absolute;
-      bottom: 40px;
+      bottom: 0;
       right: 0;
       width: 100%;
       max-width: 584px;
       z-index: 2;
       text-align: right;
+
+      a {
+        color: @red;
+      }
 
       &__heading {
         display: inline-block;
@@ -178,8 +187,10 @@ body {
       &__text {
         text-align: left;
         background-color: #fff;
-        padding: 20px 42px 20px 22px;
+        padding: 20px;
         color: #005E92;
+        font-size: 13px;
+        line-height: 1.5;
       }
 
       @media (max-width: @mobile) {
