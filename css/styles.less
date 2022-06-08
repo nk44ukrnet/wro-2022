@@ -58,6 +58,26 @@ body {
   }
 }
 
+.nav {
+  &__container {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    color: #fff;
+    gap: 10px;
+    justify-content: flex-end;
+
+    a {
+      color: inherit;
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
 .wrapper {
   width: 100%;
   height: 100%;
@@ -153,6 +173,7 @@ body {
           height: auto;
         }
       }
+
       .swiper-pagination {
         bottom: auto;
         top: 10px;
