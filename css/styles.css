@@ -298,6 +298,13 @@ body {
   overflow-x: hidden;
   overflow-y: auto;
 }
+.news__text p {
+  margin-bottom: 7px;
+}
+.news__text a {
+  color: #D6245E;
+  text-decoration: underline;
+}
 @media (max-width: 1200px) {
   .news__text {
     order: 2;
